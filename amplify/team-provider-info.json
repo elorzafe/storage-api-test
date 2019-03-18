@@ -1,0 +1,19 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "storage-test-dustin-20190314152847-authRole",
+            "UnauthRoleArn": "arn:aws:iam::718964827855:role/storage-test-dustin-20190314152847-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::718964827855:role/storage-test-dustin-20190314152847-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "storage-test-dustin-20190314152847-deployment",
+            "UnauthRoleName": "storage-test-dustin-20190314152847-unauthRole",
+            "StackName": "storage-test-dustin-20190314152847",
+            "StackId": "arn:aws:cloudformation:us-west-2:718964827855:stack/storage-test-dustin-20190314152847/891c3cd0-46a8-11e9-b726-067128db80fc"
+        },
+        "categories": {
+            "auth": {
+                "cognito0c035dec": {}
+            }
+        }
+    }
+}

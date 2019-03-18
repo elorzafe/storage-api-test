@@ -1,0 +1,36 @@
+{
+	"auth": {
+		"cognito0c035dec": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		}
+	},
+	"storage": {
+		"s351561765": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
+		},
+		"dynamo44a30266": {
+			"service": "DynamoDB",
+			"providerPlugin": "awscloudformation"
+		}
+	},
+	"function": {
+		"storagetestdustin56daf00e": {
+			"service": "Lambda",
+			"providerPlugin": "awscloudformation",
+			"build": true,
+			"dependsOn": [
+				{
+					"category": "storage",
+					"resourceName": "dynamo44a30266",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			]
+		}
+	},
+	"api": {}
+}
